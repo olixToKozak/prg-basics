@@ -2,10 +2,13 @@
 # Calculates the sum of the digits in a number
 #
 def sum_digits(number):
-    digits=(input(2))
-    ...
-    return ...
+    number=abs(number)
+    digits=str(number)
+    final=0
+    for i in digits:
+        final += int(i)
+    return final
 
 any_number = int(input('Enter integer number: '))
-result = sum_digits(...)
-print('The sum of the digits in the number ... is ...')
+result = sum_digits(any_number)
+print(f'The sum of the digits in the number {any_number} is {result}')
